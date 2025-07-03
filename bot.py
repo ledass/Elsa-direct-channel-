@@ -16,6 +16,12 @@ from info import SESSION, API_ID, API_HASH, BOT_TOKEN, LOG_STR, LOG_CHANNEL, POR
 from utils import temp
 from typing import Union, Optional, AsyncGenerator
 from pyrogram import types
+
+from pyrogram import utils as pyroutils
+
+pyroutils.MIN_CHAT_ID = -999999999999
+pyroutils.MIN_CHANNEL_ID = -100999999999999
+
 from Script import script 
 from datetime import date, datetime 
 import pytz
